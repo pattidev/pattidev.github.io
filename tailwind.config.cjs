@@ -1,26 +1,28 @@
-const config = {
+module.exports = {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
-
+	darkMode: 'class',
 	theme: {
-		fontFamily: {
-			sans: ['Wotfard', 'Graphik', 'sans-serif'],
-			serif: ['Merriweather', 'serif'],
-			mono: [
-				'Ubuntu Mono',
-				'ui-monospace',
-				'SFMono-Regular',
-				'Menlo',
-				'Monaco',
-				'Consolas',
-				'"Liberation Mono"',
-				'"Courier New"',
-				'monospace'
-			]
+		container: {
+			center: true,
+			padding: {
+				sm: '1rem',
+				lg: '2rem',
+				xl: '3rem'
+			},
+			screens: {
+				sm: '640px',
+				md: '768px',
+				lg: '1024px',
+				xl: '1080px'
+			}
 		},
-		extend: {}
+		extend: {
+			fontFamily: {
+				sans: ['Wotfard', 'Graphik', 'sans-serif'],
+				mono: ['Ubuntu Mono', 'ui-monospace']
+			}
+		}
 	},
 
 	plugins: []
 };
-
-module.exports = config;
