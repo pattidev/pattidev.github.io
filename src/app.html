@@ -3,6 +3,15 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="" />
+
+		<!-- Fonts -->
+		<!-- Preload on browsers that support it -->
+		<link rel="preload" as="font" type="text/css" href="/fonts/ubuntu-mono.css" />
+		<link rel="preload" as="font" type="text/css" href="/fonts/wotfard.css" />
+		<!-- Load normally on browsers that don't (Safari) -->
+		<link rel="stylesheet" type="text/css" href="/fonts/ubuntu-mono.css" />
+		<link rel="stylesheet" type="text/css" href="/fonts/wotfard.css" />
+
 		<link rel="icon" href="%svelte.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%svelte.head%
