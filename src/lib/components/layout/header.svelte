@@ -1,8 +1,30 @@
-<header>
-	<nav class="container">
-		<div class="left">
-			<div class="links">💼 CV</div>
+<script>
+	import Logo from '$lib/svg/logo.svelte';
+	import Socials from '$lib/components/base/socials.svelte';
+
+	export let animated = true;
+</script>
+
+<header class="relative py-8">
+	<nav class="container mx-auto flex items-center justify-center sm:justify-between">
+		<div
+			class="left flex flex-col items-center justify-center sm:justify-between gap-4 sm:gap-8 sm:flex-row"
+		>
+			<a class="logo h-10" href="/" alt="Site logo">
+				<Logo {animated} />
+			</a>
+			<div class="links flex items-center justify-center gap-8 font-normal">
+				<a href="/blog">📔 Blog</a>
+				<a href="/resume">💼 CV</a>
+			</div>
 		</div>
-		<div class="right" />
+		<div class="right hidden sm:block">
+			<Socials />
+		</div>
+	</nav>
+	<nav class="container mx-auto flex items-center justify-center sm:justify-between">
+		<div class="pt-4 sm:hidden">
+			<Socials />
+		</div>
 	</nav>
 </header>
