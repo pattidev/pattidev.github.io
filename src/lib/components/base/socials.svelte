@@ -63,22 +63,3 @@
 		<Rss />
 	</a>
 </div>
-
-<style>
-	.socials {
-		display: flex;
-		align-items: center;
-		gap: 20px;
-	}
-
-	.socials .a {
-		width: 24px;
-		color: var(--text-color);
-		fill: var(--text-color);
-	}
-
-	.socials .a :hover {
-		color: var(--link-highlight-color);
-		fill: var(--link-highlight-color);
-	}
-</style>

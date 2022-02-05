@@ -10,6 +10,7 @@
 <header class="relative py-8">
 	<div class="sm:hidden absolute inset-y-8 right-8">
 		<ThemesButton />
+		<Themes />
 	</div>
 	<nav class="container mx-auto flex items-center justify-center sm:justify-between">
 		<div
