@@ -1,4 +1,105 @@
-/* Write your global styles here, in PostCSS syntax */
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	:root[data-theme='light'] .light--hidden {
+		display: none;
+	}
+
+	:root[data-theme='dark'] .dark--hidden {
+		display: none;
+	}
+
+	a {
+		@apply text-primary hover:underline;
+	}
+
+	section {
+		@apply relative;
+	}
+
+	h1 {
+		@apply text-3xl sm:text-5xl font-bold;
+	}
+
+	h2 {
+		@apply text-3xl font-semibold;
+	}
+
+	h3 {
+		@apply text-2xl font-semibold;
+	}
+
+	h4 {
+		@apply text-xl;
+	}
+
+	.heading-link {
+		@apply invisible ml-2;
+	}
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5 {
+		@apply font-sans;
+	}
+}
+
+@layer components {
+	.section {
+		@apply relative;
+	}
+	.btn-primary {
+		@apply rounded-full appearance-none text-lg
+		border-none bg-transparent font-semibold shadow-md
+		cursor-pointer flex items-center justify-center
+		gap-1 px-5 py-2 bg-primary text-primary-content hover:bg-primary-focus hover:shadow-xl;
+	}
+
+	.btn-primary-light {
+		@apply rounded-full appearance-none text-lg
+		border-none font-semibold shadow-md 
+		cursor-pointer flex items-center justify-center
+		gap-1 px-5 py-2 bg-accent-content/80 text-primary hover:text-primary-focus hover:bg-accent-content
+		hover:shadow-xl;
+	}
+
+	.btn-secondary {
+		@apply rounded-full appearance-none text-lg
+		border-none font-semibold shadow-md
+		cursor-pointer flex items-center justify-center
+		gap-1 px-5 py-2 bg-accent-content/80 text-secondary hover:text-secondary-focus hover:bg-accent-content hover:shadow-xl;
+	}
+
+	::selection {
+		@apply bg-primary/30 text-base-content;
+	}
+}
+
+/* 
+	ul,
+	ol {
+		margin: 10px 0 10px 40px;
+
+		li {
+			margin: 6px 0;
+
+			&::marker {
+				color: var(--primary-color);
+			}
+		}
+	}
+	ul {
+		list-style: outside;
+	}
+	strong,
+	b {
+		font-weight: 600;
+	}
+	em,
+	i {
+		font-style: italic;
+	} */

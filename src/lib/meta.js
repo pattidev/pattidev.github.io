@@ -11,4 +11,4 @@ export const description =
 
 export const title = 'Marco Patti';
 
-// export const image = `${siteBaseUrl}/images/site-preview.png`;
+export const image = `${siteBaseUrl}/images/site-preview.png`;
