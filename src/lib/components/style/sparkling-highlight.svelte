@@ -2,4 +2,4 @@
 	import Sparkles from './sparkles/sparkles.svelte';
 </script>
 
-<Sparkles class="text-secondary"><strong><slot /></strong></Sparkles>
+<Sparkles><strong class="text-secondary"><slot /></strong></Sparkles>

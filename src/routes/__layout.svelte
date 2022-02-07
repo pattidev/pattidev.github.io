@@ -4,6 +4,7 @@
 	import Waves from '$lib/components/layout/waves.svelte';
 	import SvelteTheme from 'svelte-themes/SvelteTheme.svelte';
 	import { description, image, keywords, title } from '$lib/meta';
+	import Footer from '$lib/components/layout/footer.svelte';
 </script>
 
 <svelte:head>
@@ -28,3 +29,5 @@
 <main>
 	<slot />
 </main>
+
+<Footer />
