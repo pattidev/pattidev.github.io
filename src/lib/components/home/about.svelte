@@ -40,18 +40,18 @@
 	}
 
 	.blob.one {
-		height: 130%;
-		width: 130%;
+		height: 110%;
+		width: 110%;
 		animation-duration: 4s;
 	}
 	.blob.two {
-		height: 140%;
-		width: 140%;
+		height: 130%;
+		width: 130%;
 		animation-duration: 2.5s;
 	}
 	.blob.three {
-		height: 150%;
-		width: 150%;
+		height: 140%;
+		width: 140%;
 		animation-duration: 3.5s;
 	}
 </style>

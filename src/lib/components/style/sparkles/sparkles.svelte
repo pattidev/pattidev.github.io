@@ -45,7 +45,7 @@
 
 <div class="sparkle-wrapper relative inline-block">
 	{#each sparkles as sparkle (sparkle.id)}
-		<Sparkle color={sparkle.color} size={sparkle.size} style={sparkle.style} />
+		<Sparkle size={sparkle.size} style={sparkle.style} />
 	{/each}
 	<div class="slot-wrapper relative z-10">
 		<slot />
