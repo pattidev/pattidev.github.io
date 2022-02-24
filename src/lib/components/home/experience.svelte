@@ -127,7 +127,7 @@
 						</div>
 						<p>{entry.jobTitle}</p>
 						<div class="note text-base-content/70">{entry.timeframe}</div>
-						<div class="text text-justify">
+						<div class="text text-left">
 							{entry.description}
 						</div>
 					</div>
@@ -146,55 +146,3 @@
 		</div>
 	</Section>
 </section>
-<!-- 
-<section id="experience">
-	<Section
-		align="right"
-		title="Work Experience"
-		description="Over the past {yearsOfExperience}+ years, I've worked on a lot of cool projects."
-		buttonText="View Resume"
-		buttonUrl="/resume"
-		buttonColor="secondary"
-	>
-		<TwoByTwoGrid>
-			{#each entries as entry}
-				<Card>
-					<div slot="content">
-						<div class="title">
-							<LowAccentHighlight id={entry.id}>{entry.title}</LowAccentHighlight>
-						</div>
-						<p>{entry.jobTitle}</p>
-						<div class="note">{entry.timeframe}</div>
-						<div class="text justify">
-							{entry.description}
-						</div>
-					</div>
-					<div slot="footer">
-						<div class="tags">
-							{#each entry.tags as tag}
-								<Tag color={tag.color}>{tag.text}</Tag>
-							{/each}
-						</div>
-					</div>
-				</Card>
-			{/each}
-		</TwoByTwoGrid>
-	</Section>
-	<Blobs minLeft={60} maxTop={30} />
-</section>
-
-
-<style lang="scss">
-	:global(#freelancer) {
-		--bg-color: var(--freelancer-color);
-	}
-	:global(#logitix) {
-		--bg-color: var(--logitix-color);
-	}
-	:global(#sige) {
-		--bg-color: var(--sige-color);
-	}
-	:global(#promob) {
-		--bg-color: var(--promob-color);
-	}
-</style> -->
