@@ -90,11 +90,10 @@
 	}
 
 	.btn-primary-light {
-		@apply rounded-full appearance-none text-lg
+		@apply rounded-full appearance-none 
 		border-none font-semibold shadow-md 
 		cursor-pointer flex items-center justify-center
-		gap-1 px-5 py-2 bg-accent-content/80 text-primary hover:text-primary-focus hover:bg-accent-content
-		hover:shadow-xl;
+		gap-1 px-5 py-2 bg-accent-content/80 text-primary border-2 border-primary;
 	}
 
 	.btn-secondary {
@@ -102,6 +101,10 @@
 		border-none font-semibold shadow-md
 		cursor-pointer flex items-center justify-center
 		gap-1 px-5 py-2 bg-accent-content/80 text-secondary hover:text-secondary-focus hover:bg-accent-content hover:shadow-xl;
+	}
+
+	.transparent {
+		@apply bg-transparent shadow-none;
 	}
 
 	.tag-primary {
@@ -136,7 +139,7 @@
 			}
 		}
 
-		[slot='image'] {
+		[slot='figure'] {
 			background-size: cover;
 			background-position: center;
 			position: relative;
