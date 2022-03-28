@@ -1,5 +1,5 @@
-import Prism from 'prismjs';
-import 'prism-svelte';
+// import Prism from 'prismjs';
+// import 'prism-svelte';
 import readingTime from 'reading-time';
 
 const imports = import.meta.globEager('./posts/*.md');

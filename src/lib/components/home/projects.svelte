@@ -42,7 +42,7 @@
 							The website you’re seeing right now. Designed to be pretty, simple, and lightweight.
 
 							<a
-								class="project-post-button btn-primary-light transparent"
+								class="project-post-button button btn-primary-light transparent"
 								href="/blog-development-sveltekit"
 							>
 								Read blog post
@@ -86,12 +86,12 @@
 								</a>
 							</div>
 						</div>
-						<div class="text	">
+						<div class="text">
 							A companion app for Animal Crossing New Horizons. Manage your island, tasks and
 							Critterpedia with this handy web app.
 
 							<a
-								class="project-post-button btn-primary-light transparent my-auto"
+								class="project-post-button button btn-primary-light transparent my-auto"
 								href="/ionic-animal-crossing-companion"
 							>
 								Read blog post

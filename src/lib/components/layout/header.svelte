@@ -23,12 +23,12 @@
 				<a
 					href="/blog"
 					class="text-base-content fill-base-content hover:text-primary hover:fill-primary hover:no-underline"
-					>📔 Blog</a
+					>Blog 📔</a
 				>
 				<a
 					href="/resume"
 					class="text-base-content fill-base-content hover:text-primary hover:fill-primary hover:no-underline"
-					>💼 CV</a
+					>CV 💼</a
 				>
 			</div>
 		</div>

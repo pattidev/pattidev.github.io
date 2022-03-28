@@ -16,7 +16,7 @@
 		<a
 			id="projects-btn"
 			href="#projects"
-			class="btn-primary-light flex-[0_0_160px] sm:flex-[0_0_180px] order-1 sm:order-1"
+			class="button btn-primary-light flex-[0_0_160px] sm:flex-[0_0_180px] order-1 sm:order-1"
 		>
 			<ProjectsIcon />
 			Projects
@@ -24,7 +24,7 @@
 		<a
 			id="blog-btn"
 			href="/blog"
-			class="btn-primary flex-[0_0_160px] sm:flex-[0_0_180px] order-3 sm:order-2"
+			class="button btn-primary flex-[0_0_160px] sm:flex-[0_0_180px] order-3 sm:order-2"
 		>
 			<BlogIcon />
 			Blog

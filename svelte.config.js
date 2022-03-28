@@ -8,15 +8,15 @@ const config = {
 	extensions: ['.svelte', ...mdsvexConfig.extensions],
 
 	kit: {
-		adapter: adapter(),
-		trailingSlash: 'never',
 		// hydrate the <div id="svelte"> element in src/app.html
-		target: '#svelte'
+		adapter: adapter(),
+		trailingSlash: 'never'
 	},
 
 	preprocess: [
 		preprocess({
-			postcss: true
+			postcss: true,
+			preserve: ['module']
 		}),
 		mdsvex(mdsvexConfig)
 	]

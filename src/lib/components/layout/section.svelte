@@ -34,7 +34,7 @@
 			</div>
 		{/if}
 		{#if buttonText && buttonUrl}
-			<a class="btn-primary min-w-[180px] max-w-full w-auto" href={buttonUrl}>
+			<a class="button btn-primary min-w-[180px] max-w-full w-auto" href={buttonUrl}>
 				{buttonText}
 			</a>
 		{/if}

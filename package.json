@@ -32,6 +32,8 @@
 	"type": "module",
 	"dependencies": {
 		"daisyui": "^1.25.4",
+		"prism": "^4.1.2",
+		"reading-time": "^1.5.0",
 		"svelte-themes": "^0.0.98"
 	}
 }

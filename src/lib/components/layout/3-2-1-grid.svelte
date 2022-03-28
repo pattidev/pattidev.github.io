@@ -4,7 +4,6 @@
 	<slot />
 </div>
 
-<!-- nth-child-6n1:grid-cols-[span_6] -->
 <style>
 	.grid-container {
 		> :global(:nth-child(6n + 1)) {
