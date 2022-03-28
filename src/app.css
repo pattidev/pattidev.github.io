@@ -11,6 +11,10 @@
 		display: none;
 	}
 
+	[data-theme='fantinel'] .wrapper {
+		background: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=B5E5E5');
+	}
+
 	a {
 		@apply text-primary hover:underline;
 	}
@@ -141,12 +145,6 @@
 		}
 	}
 
-	.token.prolog,
-	.token.cdata {
-		color: rgb(99, 119, 119);
-		font-style: italic;
-	}
-
 	.token.punctuation {
 		color: rgb(199, 146, 234);
 	}
@@ -185,7 +183,6 @@
 		color: rgb(130, 170, 255);
 	}
 	.token.comment {
-		color: slategray !important;
 	}
 
 	.token.selector,
@@ -227,6 +224,23 @@
 
 	.token.italic {
 		font-style: italic;
+	}
+
+	pre {
+		overflow-x: auto;
+		scrollbar-color: theme('colors.primary');
+		scrollbar-width: thin;
+		padding-bottom: 5px;
+
+		&::-webkit-scrollbar {
+			height: 8px;
+		}
+		&::-webkit-scrollbar-thumb {
+			background: theme('colors.primary');
+			&:hover {
+				background: theme('colors.primary-focus');
+			}
+		}
 	}
 }
 

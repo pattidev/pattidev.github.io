@@ -53,7 +53,7 @@ module.exports = {
 
 					accent: '#37cdbe' /* Accent color */,
 					'accent-focus': '#e3ffff' /* Accent color - focused */,
-					'accent-content': 'ff3ffff' /* Foreground content color to use on accent color */,
+					'accent-content': '#ffffff' /* Foreground content color to use on accent color */,
 
 					neutral: '#3d4451' /* Neutral color */,
 					'neutral-focus': '#2a2e37' /* Neutral color - focused */,
@@ -92,7 +92,7 @@ module.exports = {
 
 					accent: '#37cdbe' /* Accent color */,
 					'accent-focus': '#e3ffff' /* Accent color - focused */,
-					'accent-content': 'ff3ffff' /* Foreground content color to use on accent color */,
+					'accent-content': '#ffffff' /* Foreground content color to use on accent color */,
 
 					neutral: '#3d4451' /* Neutral color */,
 					'neutral-focus': '#2a2e37' /* Neutral color - focused */,

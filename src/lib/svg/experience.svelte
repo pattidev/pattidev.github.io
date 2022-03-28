@@ -12,10 +12,3 @@
 		stroke-width="1.5"
 	/>
 </svg>
-
-<style>
-	svg {
-		max-height: 24px;
-		max-width: 24px;
-	}
-</style>

@@ -14,10 +14,3 @@
 		stroke-linejoin="round"
 	/>
 </svg>
-
-<style>
-	svg {
-		max-height: 24px;
-		max-width: 24px;
-	}
-</style>

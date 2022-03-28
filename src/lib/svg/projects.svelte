@@ -19,10 +19,3 @@
 	<path d="M10 12H11" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 	<path d="M5 7H6" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" />
 </svg>
-
-<style>
-	svg {
-		max-height: 24px;
-		max-width: 24px;
-	}
-</style>

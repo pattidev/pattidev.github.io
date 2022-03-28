@@ -1,3 +1,3 @@
-<span class="wrapper bg-primary">
+<span class="wrapper">
 	<slot />
 </span>

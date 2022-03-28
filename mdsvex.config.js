@@ -1,3 +1,5 @@
+import remarkFootnotes from 'remark-footnotes';
+
 const config = {
 	extensions: ['.svelte.md', '.md', '.svx'],
 
@@ -5,7 +7,7 @@ const config = {
 		dashes: 'oldschool'
 	},
 
-	remarkPlugins: [],
+	remarkPlugins: [remarkFootnotes],
 	rehypePlugins: []
 };
 

@@ -1,8 +1,7 @@
 <script context="module">
 	export async function load({ url, params, fetch }) {
-		const slug = url.pathname.split('/').slice(-1)[0]; // last part of url path
-		const extUrl = `/${slug}.json`;
-		const res = await fetch(extUrl);
+		const jsonUrl = url.pathname.replace(/\/\s*$/, '') + '.json';
+		const res = await fetch(jsonUrl);
 
 		if (res.ok) {
 			return {
@@ -14,7 +13,7 @@
 
 		return {
 			status: res.status,
-			error: new Error(`Could not load ${extUrl}`)
+			error: new Error(`Could not load ${jsonUrl}`)
 		};
 	}
 </script>
@@ -67,7 +66,7 @@
 					{/each}
 				</div>
 			</div>
-			<div class="cover-image ">
+			<div class="cover-image">
 				<Figure filename="cover" alt="Cover Figure" />
 			</div>
 			<div class="content">
@@ -94,70 +93,3 @@
 
 	<Footer />
 </div>
-
-<style>
-	#blog-post {
-		display: grid;
-		grid-template-columns:
-			1fr
-			min(65ch, 100%)
-			1fr;
-		grid-row-gap: 30px;
-		> * {
-			grid-column: 2;
-		}
-
-		.header {
-			display: flex;
-			flex-direction: column;
-			align-items: center;
-			justify-content: center;
-			text-align: center;
-			gap: 10px;
-
-			.note {
-				font-size: 90%;
-			}
-		}
-
-		.cover-image {
-			width: 100%;
-			max-height: 400px;
-			box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-
-			:global(img) {
-				object-fit: cover;
-			}
-		}
-
-		.tags {
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			gap: 5px;
-			flex-wrap: wrap;
-		}
-
-		.content {
-			:global(p) {
-				margin: 0.75rem 0;
-				line-height: 1.55em;
-				color: #ffffff;
-			}
-		}
-
-		:global(h2) {
-			margin: 3rem 0 0.5rem;
-		}
-
-		:global(h3) {
-			font-size: 1.2rem;
-			margin: 2rem 0 0.3rem;
-		}
-
-		:global(h4) {
-			font-size: 1.3rem;
-			margin: 2rem 0 0.3rem;
-		}
-	}
-</style>

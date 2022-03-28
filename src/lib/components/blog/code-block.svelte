@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="code-block block relative bg-base-content font-mono
+	class="code-block block relative bg-base-content text-white font-mono
     text-base leading-5 rounded-[8px] shadow-md py-8 px-4 my-8 mx-0"
 >
 	{#if filename}
@@ -18,8 +18,6 @@
 
 <style>
 	.code-block {
-		color: red;
-
 		.lang {
 			position: absolute;
 			right: 0;
@@ -29,6 +27,13 @@
 			padding: 5px 10px;
 			z-index: 2;
 			font-size: 0.85em;
+		}
+
+		:global(token.comment),
+		:global(token.prolog),
+		:global(token.cdata) {
+			color: rgb(99, 119, 119);
+			font-style: italic;
 		}
 
 		.filename {
