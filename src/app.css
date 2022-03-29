@@ -182,8 +182,6 @@
 	.token.builtin {
 		color: rgb(130, 170, 255);
 	}
-	.token.comment {
-	}
 
 	.token.selector,
 	.token.doctype {
@@ -215,6 +213,13 @@
 	.token.important,
 	.token.variable {
 		color: rgb(214, 222, 235);
+	}
+
+	.token.comment,
+	.token.prolog,
+	.token.cdata {
+		color: rgb(99, 119, 119);
+		font-style: italic;
 	}
 
 	.token.important,
@@ -325,6 +330,7 @@
 			height: 240px;
 
 			figure,
+			picture,
 			img {
 				width: 100%;
 				height: 100%;
@@ -361,6 +367,7 @@
 			}
 			.note {
 				font-size: 0.8rem;
+				@apply text-base-content/50;
 			}
 			.text {
 				margin-top: 5px;
@@ -503,16 +510,7 @@
 
 			.note {
 				font-size: 90%;
-			}
-		}
-
-		.cover-image {
-			width: 100%;
-			max-height: 400px;
-			box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-
-			img {
-				object-fit: cover;
+				@apply text-base-content/50;
 			}
 		}
 
@@ -565,11 +563,27 @@
 			}
 
 			blockquote {
-				padding: 25px 25px 15px;
+				padding: 25px 15px;
 				border-radius: 20px;
 				font-size: 1.1rem;
 				border-left: 4px solid theme(colors.primary);
-				@apply bg-primary/40;
+				border-right: 4px solid theme(colors.primary);
+				border-bottom: 1px solid theme(colors.primary);
+				border-top: 1px solid theme(colors.primary);
+
+				@apply bg-primary/20 italic font-serif pl-8;
+			}
+
+			blockquote:before {
+				content: open-quote;
+				display: inline;
+				height: 0;
+				line-height: 0;
+				left: -10px;
+				position: relative;
+				top: 30px;
+				color: theme(colors.accent);
+				font-size: 3em;
 			}
 
 			code:not([class^='language-']) {
@@ -577,6 +591,10 @@
 				padding: 5px 10px;
 				border-radius: 5px;
 				@apply font-mono;
+			}
+
+			.footnote-backref {
+				@apply ml-2 text-sm;
 			}
 		}
 	}

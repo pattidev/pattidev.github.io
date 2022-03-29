@@ -5,9 +5,19 @@
 	import LinkedInIcon from '$lib/svg/socials/linkedin.svelte';
 	import EmailIcon from '$lib/svg/socials/email.svelte';
 	import Rss from '$lib/svg/rss.svelte';
+	import BlogIcon from '$lib/svg/socials/blog-header.svelte';
+	import CVIcon from '$lib/svg/socials/cv-header.svelte';
 </script>
 
 <div class="socials flex items-center gap-5">
+	<a
+		class="text-base-content fill-base-content hover:text-primary hover:fill-primary w-6"
+		href="/blog"
+		title="blog"
+	>
+		<BlogIcon />
+	</a>
+
 	<a
 		class="text-base-content fill-base-content hover:text-primary hover:fill-primary w-6"
 		href="https://t.me/"
@@ -61,5 +71,12 @@
 		title="Subscribe to my RSS Feed"
 	>
 		<Rss />
+	</a>
+	<a
+		class="text-base-content fill-base-content hover:text-primary hover:fill-primary w-6"
+		href="/resume"
+		title="CV"
+	>
+		<CVIcon />
 	</a>
 </div>

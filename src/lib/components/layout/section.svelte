@@ -7,7 +7,8 @@
 </script>
 
 <div
-	class="section-container flex items-center justify-between gap-8 py-12 {align == 'top'
+	class="section-container flex items-center justify-between gap-8 py-12 border-t-[1px] {align ==
+	'top'
 		? 'flex-col'
 		: 'sm:flex-row flex-col'}"
 >

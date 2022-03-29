@@ -6,7 +6,7 @@
 </script>
 
 <footer
-	class="h-80 w-full bg-gradient-to-r from-primary/20 to-primary/50 grid grid-rows-[120px_1fr]"
+	class="h-64 w-full bg-gradient-to-r from-primary/20 to-primary/50 grid grid-rows-[120px_1fr]"
 >
 	<div class="wave">
 		<FooterWave />
