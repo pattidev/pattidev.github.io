@@ -19,9 +19,9 @@
 </script>
 
 <script>
+	import '../../app.css';
 	import Header from '$lib/components/layout/header.svelte';
 	import Footer from '$lib/components/layout/footer.svelte';
-	import '../../app.css';
 
 	import Figure from '$lib/components/base/figure.svelte';
 	import Tags from '$lib/components/base/tags.svelte';
@@ -50,12 +50,12 @@
 	<meta property="og:image" content="{siteBaseUrl}/images/posts/{post.slug}/cover.jpg" />
 	<meta name="twitter:image" content="{siteBaseUrl}/images/posts/{post.slug}/cover.jpg" />
 </svelte:head>
-<Waves />
-<div class="blog-layout">
-	<Header animated={false} />
 
+<div class="blog-layout">
+	<Waves />
+	<Header />
 	<main>
-		<article class="blog-post relative pt-10 pb-20 px-4 md:px-5 lg:px-8 bg-base-100">
+		<article class="blog-post relative pt-10 pb-20 px-4 md:px-5 lg:px-8">
 			<div class="header">
 				<h1>{post.title}</h1>
 				<!-- <div class="note">Published on {dateformat(post.date, 'UTC:dd mmmm yyyy')}</div> -->
@@ -93,3 +93,9 @@
 
 	<Footer />
 </div>
+
+<style>
+	:global(.footnotes) {
+		margin-top: 20px;
+	}
+</style>

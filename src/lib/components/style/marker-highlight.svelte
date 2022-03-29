@@ -1,3 +1,3 @@
-<span class="wrapper">
+<span class="mark-wrapper">
 	<slot />
 </span>

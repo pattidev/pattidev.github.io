@@ -11,7 +11,7 @@
 		display: none;
 	}
 
-	[data-theme='fantinel'] .wrapper {
+	[data-theme='fantinel'] .mark-wrapper {
 		background: url('https://s2.svgbox.net/pen-brushes.svg?ic=brush-9&color=B5E5E5');
 	}
 
