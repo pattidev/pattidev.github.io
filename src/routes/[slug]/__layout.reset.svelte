@@ -52,11 +52,10 @@
 </svelte:head>
 
 <SvelteTheme />
-
-<div class="blog-layout">
-	<Waves />
-	<Header />
-	<main>
+<Waves />
+<Header />
+<main>
+	<div class="blog-layout">
 		<article class="blog-post relative pt-10 pb-4 px-4 md:px-5 lg:px-8">
 			<div class="header">
 				<h1>{post.title}</h1>
@@ -92,10 +91,10 @@
 				</Section>
 			</div>
 		{/if}
-	</main>
 
-	<Footer />
-</div>
+		<Footer />
+	</div>
+</main>
 
 <style>
 	.cover-image {

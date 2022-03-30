@@ -7,11 +7,12 @@
 	import Rss from '$lib/svg/rss.svelte';
 	import BlogIcon from '$lib/svg/socials/blog-header.svelte';
 	import CVIcon from '$lib/svg/socials/cv-header.svelte';
+	export let flex = 'row';
 </script>
 
-<div class="socials flex items-center gap-5">
+<div class="socials flex flex-{flex} items-center gap-5">
 	<a
-		class="text-base-content fill-base-content hover:text-primary hover:fill-primary w-6"
+		class="text-base-content flex fill-base-content hover:text-primary hover:fill-primary w-6"
 		href="/blog"
 		title="blog"
 	>

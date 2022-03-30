@@ -32,7 +32,7 @@
 		<a
 			id="experience-btn"
 			href="#experience"
-			class="btn-secondary flex-[0_0_160px] sm:flex-[0_0_180px] order-2 sm:order-3"
+			class="button btn-secondary flex-[0_0_160px] sm:flex-[0_0_180px] order-2 sm:order-3"
 		>
 			<ExperienceIcon />
 			Experience

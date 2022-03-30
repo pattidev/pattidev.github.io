@@ -28,7 +28,7 @@
 	export let posts;
 </script>
 
-<div class="container">
+<div class="container pt-16">
 	<Hero />
 	<About />
 	<RecentPosts {posts} />
