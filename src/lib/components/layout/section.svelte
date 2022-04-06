@@ -21,7 +21,7 @@
 			: 'order-1 max-w-xl'}"
 	>
 		{#if title || description}
-			<div class="text flex flex-col justify-center align-center gap-1">
+			<div class="flex flex-col justify-center align-center gap-1">
 				{#if title}
 					<h2>
 						{title}

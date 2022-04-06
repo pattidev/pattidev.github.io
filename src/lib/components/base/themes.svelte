@@ -32,8 +32,45 @@
 		<option value="light">Light</option>
 		<option value="system">System</option>
 		<option value="fantinel">Fantinel</option>
-		<option value="cupcake">Cupcake</option>
-		<option value="fantasy">Fantasy</option>
+		<option value="cupcake">cupcake</option>
+
+		<option value="emerald">emerald</option>
+
+		<option value="corporate">corporate</option>
+
+		<option value="synthwave">synthwave</option>
+
+		<option value="retro">retro</option>
+
+		<option value="cyberpunk">cyberpunk</option>
+
+		<option value="valentine">valentine</option>
+
+		<option value="halloween">halloween</option>
+
+		<option value="garden">garden</option>
+
+		<option value="forest">forest</option>
+
+		<option value="aqua">aqua</option>
+
+		<option value="pastel">pastel</option>
+
+		<option value="fantasy">fantasy</option>
+
+		<option value="dracula">dracula</option>
+
+		<option value="cmyk">cmyk</option>
+
+		<option value="autumn">autumn</option>
+
+		<option value="business">business</option>
+
+		<option value="acid">acid</option>
+
+		<option value="night">night</option>
+
+		<option value="winter">winter</option>
 	</select>
 </div>
 

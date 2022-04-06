@@ -5,7 +5,7 @@
 </script>
 
 <section
-	class="hero flex flex-col items-center content-center gap-4 relative pt-6 px-0 pb-4 sm:py-16 sm:px-0"
+	class="hero flex flex-col items-center content-center gap-4 relative pt-6 px-0 pb-4 sm:py-12 sm:px-0"
 >
 	<h1 class="justify-center">Hello, I'm Marco!</h1>
 	<p class="intro font-medium text-2xl flex-col hidden sm:flex">
@@ -16,7 +16,7 @@
 		<a
 			id="projects-btn"
 			href="#projects"
-			class="button btn-primary-light flex-[0_0_160px] sm:flex-[0_0_180px] order-1 sm:order-1"
+			class="button btn-secondary flex-[0_0_160px] sm:flex-[0_0_180px] order-1 sm:order-1"
 		>
 			<ProjectsIcon />
 			Projects

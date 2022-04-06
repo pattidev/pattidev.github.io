@@ -25,7 +25,7 @@
 					</div>
 					<div slot="content">
 						<div class="title">
-							Personal Website
+							<a href="/blog-development-sveltekit">Personal Website</a>
 							<div class="links">
 								<a
 									class="text-secondary"
@@ -42,7 +42,7 @@
 							The website you’re seeing right now. Designed to be pretty, simple, and lightweight.
 
 							<a
-								class="project-post-button button btn-primary-light transparent"
+								class="project-post-button button btn-primary-light  hover:transparent transparent"
 								href="/blog-development-sveltekit"
 							>
 								Read blog post
@@ -63,7 +63,7 @@
 					</div>
 					<div slot="content">
 						<div class="title">
-							Pocket Companion
+							<a href="https://github.com/matfantinel/acnh-pocket-companion">Pocket Companion</a>
 							<div class="links">
 								<a
 									class="text-secondary"
@@ -91,7 +91,7 @@
 							Critterpedia with this handy web app.
 
 							<a
-								class="project-post-button button btn-primary-light transparent my-auto"
+								class="project-post-button button btn-primary-light hover:transparent transparent"
 								href="/ionic-animal-crossing-companion"
 							>
 								Read blog post
@@ -253,8 +253,8 @@
 			padding: 3px;
 
 			&:hover {
-				color: var(--primary-color);
-				fill: var(--primary-color);
+				color: var(--p);
+				fill: var(--p);
 			}
 		}
 	}

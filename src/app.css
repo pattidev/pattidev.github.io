@@ -16,7 +16,7 @@
 	}
 
 	a {
-		@apply text-primary hover:underline;
+		@apply text-primary-focus hover:underline;
 	}
 
 	section {
@@ -24,11 +24,11 @@
 	}
 
 	h1 {
-		@apply text-3xl sm:text-5xl font-bold;
+		@apply text-3xl sm:text-5xl font-semibold;
 	}
 
 	h2 {
-		@apply text-3xl font-semibold;
+		@apply text-3xl font-semibold text-secondary-focus;
 	}
 
 	h3 {
@@ -79,6 +79,21 @@
 
 	::selection {
 		@apply bg-primary/30 text-base-content;
+	}
+
+	select:focus {
+		border-style: none;
+	}
+
+	select {
+		scrollbar-width: none; /*For Firefox*/
+		-ms-overflow-style: none; /*For Internet Explorer 10+*/
+	}
+
+	select:-webkit-scrollbar {
+		/*For WebKit Browsers*/
+		width: 0;
+		height: 0;
 	}
 
 	ul,
@@ -146,7 +161,7 @@
 	}
 
 	.token.punctuation {
-		color: rgb(199, 146, 234);
+		color: theme('colors.secondary');
 	}
 
 	.namespace {
@@ -166,7 +181,7 @@
 	.token.tag,
 	.token.operator,
 	.token.keyword {
-		color: rgb(127, 219, 202);
+		color: theme('colors.accent');
 	}
 
 	.token.boolean {
@@ -180,7 +195,7 @@
 	.token.char,
 	.token.constant,
 	.token.builtin {
-		color: rgb(130, 170, 255);
+		color: theme('colors.accent');
 	}
 
 	.token.selector,
@@ -218,7 +233,7 @@
 	.token.comment,
 	.token.prolog,
 	.token.cdata {
-		color: rgb(99, 119, 119);
+		color: hsl(var(--nc));
 		font-style: italic;
 	}
 
@@ -257,10 +272,6 @@
 		background-color: theme('colors.base-100');
 	}
 
-	.section {
-		@apply relative;
-	}
-
 	.button {
 		svg {
 			max-height: 24px;
@@ -274,21 +285,21 @@
 		@apply rounded-full appearance-none text-lg
 		border-none bg-transparent font-semibold shadow-md
 		cursor-pointer flex items-center justify-center
-		gap-1 px-5 py-2 bg-primary text-primary-content hover:bg-primary-focus  hover:shadow-xl;
+		gap-1 px-5 py-2 bg-primary-focus text-gray-100 hover:bg-primary  hover:shadow-xl;
 	}
 
 	.btn-primary-light {
 		@apply rounded-full appearance-none 
 		border-none font-semibold shadow-md 
 		cursor-pointer flex items-center justify-center
-		gap-1 px-5 py-2 bg-accent-content/80 text-primary border-2 border-primary hover:bg-accent-content;
+		gap-1 px-5 py-2 bg-primary-content/80 text-primary border-2 border-primary hover:bg-accent-content;
 	}
 
 	.btn-secondary {
 		@apply rounded-full appearance-none text-lg
 		border-none font-semibold shadow-md
 		cursor-pointer flex items-center justify-center
-		gap-1 px-5 py-2 bg-accent-content/80 text-secondary hover:text-secondary-focus hover:bg-accent-content hover:shadow-xl;
+		gap-1 px-5 py-2 bg-secondary-focus/80 text-gray-100 hover:bg-secondary/80 hover:shadow-xl;
 	}
 
 	.transparent {
@@ -303,7 +314,7 @@
 	}
 
 	.card {
-		@apply bg-white;
+		@apply bg-base-200;
 		box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.1);
 		color: theme('colors.base-content');
 		border-radius: 10px;
@@ -362,7 +373,8 @@
 			}
 
 			.title {
-				font-weight: 700;
+				@apply text-primary-focus;
+				font-weight: 600;
 				font-size: 1.1rem;
 				&:hover {
 					color: theme('colors.primary');
@@ -575,7 +587,7 @@
 				border-bottom: 1px solid theme(colors.primary);
 				border-top: 1px solid theme(colors.primary);
 
-				@apply bg-primary/20 italic font-serif pl-8;
+				@apply bg-primary/10 italic font-serif pl-8;
 			}
 
 			blockquote:before {
@@ -586,7 +598,7 @@
 				left: -10px;
 				position: relative;
 				top: 30px;
-				color: theme(colors.accent);
+				color: theme(colors.primary-focus);
 				font-size: 3em;
 			}
 
@@ -594,7 +606,7 @@
 				background: #e3e3e3;
 				padding: 5px 10px;
 				border-radius: 5px;
-				@apply font-mono;
+				@apply font-mono text-primary-focus;
 			}
 
 			.footnote-backref {

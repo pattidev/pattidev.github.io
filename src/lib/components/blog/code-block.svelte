@@ -4,7 +4,7 @@
 </script>
 
 <div
-	class="code-block block relative bg-base-content text-white font-mono
+	class="code-block block relative bg-neutral-focus text-white font-mono
     text-base leading-5 rounded-[8px] shadow-md py-8 px-4 my-8 mx-0"
 >
 	{#if filename}

@@ -3,11 +3,11 @@
 </script>
 
 {#if color == 'primary'}
-	<div class="tag bg-primary-focus/70 text-base-100">
+	<div class="tag bg-primary-focus/70 text-gray-100">
 		<slot />
 	</div>
 {:else}
-	<div class="tag bg-secondary-focus/70 text-base-100">
+	<div class="tag bg-secondary-focus/70 text-gray-100">
 		<slot />
 	</div>
 {/if}
